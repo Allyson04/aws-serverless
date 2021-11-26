@@ -1,2 +1,4 @@
 *.csv
 *.txt
+node_modules
+package*
