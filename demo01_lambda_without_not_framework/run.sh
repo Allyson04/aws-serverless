@@ -31,3 +31,7 @@ aws lambda update-function-code --zip-file fileb://function.zip --function-name 
 
 # invoke updated lambda function
 aws lambda invoke --function-name hello-cli --log-type Tail logs/lambda-exec-update.log
+
+# remove role and function
+aws lambda delete-function --function-name hello-cli
+aws iam delete-role --role-name lambda-exemplo
